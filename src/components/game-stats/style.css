@@ -1,0 +1,42 @@
+.stat-wrapper {
+  width: 400px;
+  background-color: #fff5e6;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.form-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.stat-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.stat-item {
+  width: 130px;
+}
+
+.stat-label {
+  font-size: 14px;
+}
+
+.stat-value {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: block;
+  background: #2C2F3F;
+  float: left;
+}

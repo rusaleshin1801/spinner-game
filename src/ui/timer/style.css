@@ -1,0 +1,77 @@
+.timer-wrapper {
+  width: 868px;
+  padding: 24px;
+  gap: 24px;
+  border-radius: 20px;
+  background-color: #fff5e6;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.progress-ring__circle {
+  transition: stroke-dasharray 0.1s linear, stroke-dashoffset 0.1s linear;
+}
+
+.progress-ring__circle--progress {
+  stroke-dasharray: 0;
+}
+
+.arc {
+  position: absolute;
+  width: 300px;
+  aspect-ratio: 1;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #c0d860;
+  mask: linear-gradient(#0000 0 0) content-box intersect,
+    conic-gradient(#000 var(--a), #0000 0);
+}
+
+.spin {
+  animation: spin 500ms linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, -100%) rotate(180deg);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid black;
+  transition: transform 0.5s ease-out;
+}
+
+.winner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timer {
+  display: flex;
+  color: #2c2f3f;
+  justify-content: center;
+}
+
+.timer-input {
+  padding: 12px 32px;
+  border: 2px solid #2c2f3f;
+  border-radius: 12px;
+}

@@ -1,0 +1,39 @@
+.info-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.winner-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.winner-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.winner-bet {
+  font-size: 14px;
+}
+
+.ton-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  justify-content: center;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.ton {
+  font-size: 20px;
+}
+
+.usd-item {
+  font-weight: bold;
+}
